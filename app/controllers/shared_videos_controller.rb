@@ -5,6 +5,7 @@ class SharedVideosController < ApplicationController
     shared_video = SharedVideo.create(youtube_url: params[:youtube_url], user: current_user)
 
     if shared_video.persisted?
+      ActionCable.server.broadcast 'shared_videos_channel', ::SharedVideoSerializer.new(shared_video).serializable_hash[:data][:attributes]
       render json: {
         status: 200,
         message: 'Shared video successfully'
@@ -17,9 +18,11 @@ class SharedVideosController < ApplicationController
   end
 
   def index
+    shared_videos_transform = SharedVideo.all.map{|shared_video| ::SharedVideoSerializer.new(shared_video).serializable_hash[:data][:attributes]}
+
     render json: {
       status: 200,
-      message: SharedVideo.all
+      shared_videos: shared_videos_transform
     }, status: :ok
   end
 end

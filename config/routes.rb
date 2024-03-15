@@ -9,5 +9,6 @@ Rails.application.routes.draw do
     registrations: 'users/registrations',
   }
 
-  resources :shared_videos
+  resources :shared_videos, only: [:index, :create]
+  mount ActionCable.server => '/cable'
 end
