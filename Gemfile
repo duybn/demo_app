@@ -33,6 +33,11 @@ gem 'rack-cors', :require => 'rack/cors'
 gem 'devise'
 gem 'devise-jwt'
 gem 'jsonapi-serializer'
+gem "capistrano"
+gem "capistrano3-puma"
+gem "capistrano-rails", require: false
+gem "capistrano-bundler", require: false
+gem "capistrano-rvm"
 
 # Use Active Storage variants [https://guides.rubyonrails.org/active_storage_overview.html#transforming-images]
 # gem "image_processing", "~> 1.2"
