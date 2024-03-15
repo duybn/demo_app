@@ -47,6 +47,9 @@ group :development, :test do
   gem 'pry', '~> 0.14.2'
   gem 'rspec-rails'
   gem 'shoulda-matchers', '~> 4.0.1'
+  gem 'factory_bot_rails'
+  gem 'faker'
+  gem 'database_cleaner'
 end
 
 group :development do

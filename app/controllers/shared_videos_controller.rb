@@ -6,6 +6,7 @@ class SharedVideosController < ApplicationController
 
     if shared_video.persisted?
       ActionCable.server.broadcast 'shared_videos_channel', ::SharedVideoSerializer.new(shared_video).serializable_hash[:data][:attributes]
+
       render json: {
         status: 200,
         message: 'Shared video successfully'
