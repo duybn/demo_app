@@ -45,6 +45,8 @@ group :development, :test do
   gem "debug", platforms: %i[ mri mingw x64_mingw ]
   gem "byebug"
   gem 'pry', '~> 0.14.2'
+  gem 'rspec-rails'
+  gem 'shoulda-matchers', '~> 4.0.1'
 end
 
 group :development do
