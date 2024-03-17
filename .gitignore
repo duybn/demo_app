@@ -32,3 +32,4 @@
 
 encrypted.yml
 .byebug_history
+.env
