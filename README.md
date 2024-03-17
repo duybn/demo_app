@@ -1,24 +1,16 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+### Introduction
+- Backend API for sharing youtube videos
 
-Things you may want to cover:
+### Prerequisites
+- Ruby 2.7.8
 
-* Ruby version
+### Installation
+1. Install RVM
+2. Install Ruby 2.7.8
+3. Install postgres lib dev
+4. rake db:create rake db:migrate
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+# Usage:
+Since this is API only application, we can use this or test it via HTTP Client such as Postman, ...
