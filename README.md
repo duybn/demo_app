@@ -23,3 +23,8 @@ Shoud use igconito since currently I use local storgate for saving Auth Token
 https://drive.google.com/file/d/1hzr2X181AhiqXh4pBNntzvi6Wi9sWvnT/view?usp=sharing (Demo link)
 
 http://remi-fe-27.s3-website-ap-southeast-1.amazonaws.com/profile
+
+# Setup with docker
+`make build`
+`make setup`
+`make up`
