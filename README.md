@@ -25,6 +25,6 @@ https://drive.google.com/file/d/1hzr2X181AhiqXh4pBNntzvi6Wi9sWvnT/view?usp=shari
 http://remi-fe-27.s3-website-ap-southeast-1.amazonaws.com/profile
 
 # Setup with docker
-`make build`
-`make setup`
-`make up`
+1. `make build`
+2. `make setup`
+3. `make up`
